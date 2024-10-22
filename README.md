@@ -39,4 +39,4 @@ python expose_main.py
 After the backdoor exposure, you can verify the performance of the backdoor detection or removal method listed in their subfolders.
 
 ## Acknowledgement
-As our work is currently under review, this is an open-source project contributed by researchers from the community. Part of the code is based on our existing paper [RNP](https://github.com/bboylyg/RNP), either as a reimplementation or open-source code provided by the authors.
+As our work is currently under review, this is an open-source project contributed by the authors. Part of the code is based on our existing paper [RNP](https://github.com/bboylyg/RNP), either as a reimplementation or open-source code.
