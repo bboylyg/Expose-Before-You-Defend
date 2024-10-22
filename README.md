@@ -16,3 +16,21 @@ By incorporating backdoor exposure, our EBYD framework effectively integrates ex
 - **datasets:** implementation of wrapper for commonly used dataset based on torchvision
 - **models:** implementations for commonly used models
 - **training** implementations of training pipeline
+
+## Quick Start
+Run the following command to train a backdoored model:
+
+```bash
+python backdoor_main.py
+```
+
+By default, we only use 500 defense data randomly sampled from the training set to perform the exposure process. To check the performance of backdoor exposure on a Badnets ResNet-18 network (i.e. 10% poisoning rata with ResNet-18 on CIFAR-10), you can directly run the command like:
+
+```bash
+python expose_main.py
+```
+
+After the backdoor exposure, you can verify the performance of the backdoor detection or removal method listed in their subfolders.
+
+## Acknowledgement
+As our work is currently under review, this is an open-source project contributed by researchers from the community. Part of the code is based on our existing paper [RNP](https://github.com/bboylyg/RNP), either as a reimplementation or open-source code provided by the authors.
