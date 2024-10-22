@@ -1,0 +1,35 @@
+num_classes: 10
+epochs: 60
+grad_clip: -1
+log_frequency: 25
+
+criterion:
+  name: CrossEntropyLoss
+
+model:
+  name: ResNet18
+  num_classes: $num_classes
+
+optimizer:
+  name: SGD
+  lr: 0.1
+  weight_decay: 5.e-4
+  momentum: 0.9
+
+scheduler:
+  name: MultiStepLR
+  milestones: [45, 55, 60]
+  gamma: 0.1
+
+dataset:
+  name: DatasetGenerator
+  train_bs: 256
+  eval_bs: 256
+  n_workers: 4
+  train_d_type: 'DynamicCIFAR10'
+  test_d_type: 'CIFAR10'
+  train_tf_op: 'NoAug'
+  test_tf_op: 'NoAug'
+  poison_test_d_type: 'DynamicCIFAR10'
+  train_path: '/data/CIFAR10/'
+  test_path: '/data/CIFAR10'
