@@ -1,5 +1,5 @@
 # Expose-Before-You-Defend
-Expose Before You Defend: Unifying and Enhancing Backdoor Defenses via Exposed Models
+A unified backdoor defense: **Expose Before You Defend: Unifying and Enhancing Backdoor Defenses via Exposed Models** by Yige Li, Hanxun Huang, Jiaming Zhang, and Xingjun Ma.
 
 ## Introduction
 
